@@ -92,7 +92,7 @@ task.spawn(function()
 	end
 
 	-- Pause at 43%
-	task.wait(2)
+	task.wait(1.3)
 
 	-- 43% → 88%
 	for i = 0.43, 0.88, 0.03 do
@@ -101,7 +101,7 @@ task.spawn(function()
 	end
 
 	-- Pause at 88%
-	task.wait(2)
+	task.wait(1.3)
 
 	-- 88% → 100%
 	for i = 0.88, 1, 0.02 do
