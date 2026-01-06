@@ -30,30 +30,30 @@ local Mouse = Player:GetMouse()
 -- ICON MODULE (Material Icons)
 -- ============================================
 local IconModule = {
-		["perm_media"] = "http://www.roblox.com/asset/?id=6031215982";
-		["sticky_note_2"] = "http://www.roblox.com/asset/?id=6031265972";
-		["gavel"] = "http://www.roblox.com/asset/?id=6023565902";
-		["table_view"] = "http://www.roblox.com/asset/?id=6031233835";
-		["home"] = "http://www.roblox.com/asset/?id=6026568195";
-		["list"] = "http://www.roblox.com/asset/?id=6026568229";
-		["alarm_add"] = "http://www.roblox.com/asset/?id=6023426898";
-		["speaker_notes"] = "http://www.roblox.com/asset/?id=6031266001";
-		["check_circle_outline"] = "http://www.roblox.com/asset/?id=6023426909";
-		["extension"] = "http://www.roblox.com/asset/?id=6023565892";
-		["pending"] = "http://www.roblox.com/asset/?id=6031084745";
-		["pageview"] = "http://www.roblox.com/asset/?id=6031216007";
-		["group_work"] = "http://www.roblox.com/asset/?id=6023565910";
-		["zoom_in"] = "http://www.roblox.com/asset/?id=6031075573";
-		["aspect_ratio"] = "http://www.roblox.com/asset/?id=6022668895";
-		["code"] = "http://www.roblox.com/asset/?id=6022668955";
-		["3d_rotation"] = "http://www.roblox.com/asset/?id=6022668893";
-		["translate"] = "http://www.roblox.com/asset/?id=6031225812";
-		["star_rate"] = "http://www.roblox.com/asset/?id=6031265978";
-		["system_update_alt"] = "http://www.roblox.com/asset/?id=6031251515";
-		["open_with"] = "http://www.roblox.com/asset/?id=6026568265";
-		["build_circle"] = "http://www.roblox.com/asset/?id=6023426952";
+	["perm_media"] = "http://www.roblox.com/asset/?id=6031215982";
+	["sticky_note_2"] = "http://www.roblox.com/asset/?id=6031265972";
+	["gavel"] = "http://www.roblox.com/asset/?id=6023565902";
+	["table_view"] = "http://www.roblox.com/asset/?id=6031233835";
+	["home"] = "http://www.roblox.com/asset/?id=6026568195";
+	["list"] = "http://www.roblox.com/asset/?id=6026568229";
+	["alarm_add"] = "http://www.roblox.com/asset/?id=6023426898";
+	["speaker_notes"] = "http://www.roblox.com/asset/?id=6031266001";
+	["check_circle_outline"] = "http://www.roblox.com/asset/?id=6023426909";
+	["extension"] = "http://www.roblox.com/asset/?id=6023565892";
+	["pending"] = "http://www.roblox.com/asset/?id=6031084745";
+	["pageview"] = "http://www.roblox.com/asset/?id=6031216007";
+	["group_work"] = "http://www.roblox.com/asset/?id=6023565910";
+	["zoom_in"] = "http://www.roblox.com/asset/?id=6031075573";
+	["aspect_ratio"] = "http://www.roblox.com/asset/?id=6022668895";
+	["code"] = "http://www.roblox.com/asset/?id=6022668955";
+	["3d_rotation"] = "http://www.roblox.com/asset/?id=6022668893";
+	["translate"] = "http://www.roblox.com/asset/?id=6031225812";
+	["star_rate"] = "http://www.roblox.com/asset/?id=6031265978";
+	["system_update_alt"] = "http://www.roblox.com/asset/?id=6031251515";
+	["open_with"] = "http://www.roblox.com/asset/?id=6026568265";
+	["build_circle"] = "http://www.roblox.com/asset/?id=6023426952";
 		["toc"] = "http://www.roblox.com/asset/?id=6031229341";
-		["settings_phone"] = "http://www.roblox.com/asset/?id=6031289445";
+	["settings_phone"] = "http://www.roblox.com/asset/?id=6031289445";
 		["open_in_full"] = "http://www.roblox.com/asset/?id=6026568245";
 		["history"] = "http://www.roblox.com/asset/?id=6026568197";
 		["accessibility_new"] = "http://www.roblox.com/asset/?id=6022668945";
@@ -1513,9 +1513,8 @@ local IconModule = {
 		["baby_changing_station"] = "http://www.roblox.com/asset/?id=6035107930";
 		["fire_extinguisher"] = "http://www.roblox.com/asset/?id=6035121913";
 		["sparkle"] = "http://www.roblox.com/asset/?id=4483362748"
-	}
-}
 
+}
 
 -- ============================================
 -- THEME CONFIGURATION - MODERN SLEEK
