@@ -1,24 +1,7 @@
---[[
-    ╔═══════════════════════════════════════════════════════════════╗
-    ║                      🍗 CRISPY UI 🍗                          ║
-    ║         KFC & Fried Chicken Inspired Roblox UI Library        ║
-    ║                                                               ║
-    ║  Features: Toggles, Sliders, Dropdowns, TextInput, ColorPicker║
-    ╚═══════════════════════════════════════════════════════════════╝
-    
-    Usage:
-        local CrispyUI = loadstring(game:HttpGet("YOUR_URL"))()
-        local Bucket = CrispyUI:CreateBucket("My Menu")
-        local Recipe = Bucket:AddRecipe("Settings")
-        Recipe:AddToggle({Name = "Crispy Mode", Default = true, Callback = function(v) print(v) end})
---]]
+
 
 local CrispyUI = {}
 CrispyUI.__index = CrispyUI
-
--- ═══════════════════════════════════════════════════════════════
--- 🎨 THEME CONFIGURATION - KFC Inspired Colors
--- ═══════════════════════════════════════════════════════════════
 
 local Theme = {
     -- Primary KFC Colors
@@ -51,10 +34,6 @@ local Theme = {
     SpicyRed = Color3.fromRGB(255, 69, 0),
     HoneyGold = Color3.fromRGB(245, 183, 0),
 }
-
--- ═══════════════════════════════════════════════════════════════
--- 🛠️ UTILITY FUNCTIONS
--- ═══════════════════════════════════════════════════════════════
 
 local TweenService = game:GetService("TweenService")
 local UserInputService = game:GetService("UserInputService")
@@ -158,10 +137,6 @@ local function CreateRipple(button, color)
         end)
     end)
 end
-
--- ═══════════════════════════════════════════════════════════════
--- 🪣 MAIN BUCKET (WINDOW) CREATION
--- ═══════════════════════════════════════════════════════════════
 
 function CrispyUI:CreateBucket(title)
     local Bucket = {}
@@ -350,10 +325,7 @@ function CrispyUI:CreateBucket(title)
             MainFrame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
         end
     end)
-    
-    -- ═══════════════════════════════════════════════════════════════
-    -- 📦 RECIPE (SECTION/TAB) CREATION
-    -- ═══════════════════════════════════════════════════════════════
+
     
     function Bucket:AddRecipe(name)
         local Recipe = {}
@@ -888,10 +860,6 @@ function CrispyUI:CreateBucket(title)
             return Dropdown
         end
         
-        -- ═══════════════════════════════════════════════════════════════
-        -- ✏️ TEXT INPUT (Order Box)
-        -- ═══════════════════════════════════════════════════════════════
-        
         function Recipe:AddTextInput(options)
             local TextInput = {}
             
@@ -1236,10 +1204,6 @@ function CrispyUI:CreateBucket(title)
             return ColorPicker
         end
         
-        -- ═══════════════════════════════════════════════════════════════
-        -- 🔘 BUTTON (Crispy Button)
-        -- ═══════════════════════════════════════════════════════════════
-        
         function Recipe:AddButton(options)
             local Button = {}
             
@@ -1304,10 +1268,6 @@ function CrispyUI:CreateBucket(title)
             return Button
         end
         
-        -- ═══════════════════════════════════════════════════════════════
-        -- 📝 LABEL (Info Text)
-        -- ═══════════════════════════════════════════════════════════════
-        
         function Recipe:AddLabel(text)
             local Label = Create("TextLabel", {
                 Name = "Label",
@@ -1324,10 +1284,7 @@ function CrispyUI:CreateBucket(title)
             
             return Label
         end
-        
-        -- ═══════════════════════════════════════════════════════════════
-        -- ➖ DIVIDER (Separator)
-        -- ═══════════════════════════════════════════════════════════════
+    
         
         function Recipe:AddDivider()
             local Divider = Create("Frame", {
@@ -1353,10 +1310,6 @@ function CrispyUI:CreateBucket(title)
     
     return Bucket
 end
-
--- ═══════════════════════════════════════════════════════════════
--- 🔔 NOTIFICATION SYSTEM
--- ═══════════════════════════════════════════════════════════════
 
 function CrispyUI:Notify(options)
     local title = options.Title or "Notification"
@@ -1451,3 +1404,4 @@ function CrispyUI:Notify(options)
 end
 
 return CrispyUI
+
